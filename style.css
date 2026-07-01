@@ -90,15 +90,12 @@ body{
 
 
 .page{
-
     display:none;
-
-    padding:20px;
-
-    min-height:520px;
-
+    padding:22px;
+    min-height:auto;
+    height:auto;
+    overflow:visible;
 }
-
 
 
 .active{
@@ -730,4 +727,12 @@ body{
 
 .navbar{
     position:relative;
+}
+.phone{
+    overflow-y:auto;
+    height:90vh;
+}
+
+#screen{
+    height:auto;
 }
