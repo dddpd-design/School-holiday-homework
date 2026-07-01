@@ -1,0 +1,322 @@
+<link rel="stylesheet" href="style.css">
+<div class="phone">
+
+  <div class="header">
+
+    <h2>📘 AI Study Assistant</h2>
+    <p>Smart Learning Dashboard</p>
+
+  </div>
+
+
+  <div id="screen">
+
+
+    <!-- HOME -->
+    <div class="page active" id="home">
+
+
+      <div class="profile">
+
+        <div class="avatar">
+          🤖
+        </div>
+
+        <h2>AI Study Assistant</h2>
+
+        <p>
+          Your smart learning companion
+        </p>
+
+      </div>
+
+
+
+      <div class="card">
+
+        <h4>🎯 Today's Goal</h4>
+
+        <p>
+          Complete Science & Maths revision
+        </p>
+
+        <div class="mini-progress">
+          <span></span>
+        </div>
+
+      </div>
+
+
+
+      <div class="card stats">
+
+        <div>
+          <h4>🔥 Streak</h4>
+          <p>12 Days</p>
+        </div>
+
+        <div>
+          <h4>📚 Tasks</h4>
+          <p>7 Done</p>
+        </div>
+
+      </div>
+
+
+
+      <div class="card">
+
+        <h4>📈 Progress</h4>
+
+        <progress value="70" max="100"></progress>
+
+        <p>
+          70% Completed
+        </p>
+
+      </div>
+
+
+
+
+      <div class="card theme-card">
+
+        <h4>🌙 Theme</h4>
+
+        <p>
+          Switch Dark / Light Mode
+        </p>
+
+        <button onclick="toggleTheme()">
+          Change Theme
+        </button>
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- SUBJECTS -->
+    <div class="page" id="subjects">
+
+
+      <h3>📚 Subjects</h3>
+
+      <p class="subject-hint">
+        Tap a subject to start the chat 🤖
+      </p>
+
+
+
+      <div class="subject science" onclick="openSubject('Science')">
+        🧪 Science
+        <span>⭐⭐⭐⭐⭐</span>
+      </div>
+
+
+      <div class="subject maths" onclick="openSubject('Mathematics')">
+        📐 Mathematics
+        <span>⭐⭐⭐⭐⭐</span>
+      </div>
+
+
+      <div class="subject sst" onclick="openSubject('Social Science')">
+        🌍 Social Science
+        <span>⭐⭐⭐⭐</span>
+      </div>
+
+
+      <div class="subject english" onclick="openSubject('English')">
+        📖 English
+        <span>⭐⭐⭐⭐</span>
+      </div>
+
+
+      <div class="subject sanskrit" onclick="openSubject('Sanskrit')">
+        🕉 Sanskrit
+        <span>⭐⭐⭐</span>
+      </div>
+
+
+      <div class="subject hindi" onclick="openSubject('Hindi')">
+        🇮🇳 Hindi
+        <span>⭐⭐⭐⭐</span>
+      </div>
+
+
+      <div class="subject ai" onclick="openSubject('AI')">
+        🤖 Artificial Intelligence
+        <span>⭐⭐⭐⭐⭐</span>
+      </div>
+
+
+      <div class="subject data" onclick="openSubject('Data Science')">
+        📊 Data Science
+        <span>⭐⭐⭐⭐</span>
+      </div>
+
+
+      <div class="subject it" onclick="openSubject('IT')">
+        💻 Information Technology
+        <span>⭐⭐⭐⭐</span>
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- CHAT -->
+    <div class="page" id="chat">
+
+
+      <h3>🤖 AI Tutor</h3>
+
+
+      <div id="chatBox">
+
+        <div class="bubble ai">
+
+          🤖 Hello! Ask me anything about your studies.
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="chat-input">
+
+        <input
+        id="chatInput"
+        placeholder="Ask AI..."
+        >
+
+
+        <button onclick="sendMessage()">
+          ↑
+        </button>
+
+
+      </div>
+
+
+
+      <p class="hint">
+
+        💡 Try: "Explain photosynthesis"
+
+      </p>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- FEEDBACK -->
+    <div class="page" id="feedback">
+
+
+      <h3>⭐ Feedback</h3>
+
+
+      <p>
+        Rate your experience
+      </p>
+
+
+
+      <div class="stars">
+
+        <button>⭐</button>
+        <button>⭐</button>
+        <button>⭐</button>
+        <button>⭐</button>
+        <button>⭐</button>
+
+      </div>
+
+
+
+      <textarea
+      placeholder="Write feedback..."
+      ></textarea>
+
+
+
+
+      <button>
+        Submit ✅
+      </button>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+  <!-- Bottom Navigation -->
+
+  <div class="navbar">
+
+
+    <button onclick="showPage('home')">
+
+      🏠
+      <small>Home</small>
+
+    </button>
+
+
+
+    <button onclick="showPage('subjects')">
+
+      📚
+      <small>Subjects</small>
+
+    </button>
+
+
+
+    <button onclick="showPage('chat')">
+
+      🤖
+      <small>AI</small>
+
+    </button>
+
+
+
+    <button onclick="showPage('feedback')">
+
+      ⭐
+      <small>Feedback</small>
+
+    </button>
+
+
+
+  </div>
+
+
+</div>
+<script src="script.js"></script>
