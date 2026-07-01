@@ -701,3 +701,33 @@ textarea{
     position:sticky;
     bottom:0;
 }
+html,
+body{
+    height:auto;
+    overflow-y:auto;
+}
+
+
+.phone{
+    height:90vh;
+    max-height:none;
+    overflow-y:auto;
+}
+
+
+#screen{
+    height:auto;
+    overflow:visible;
+}
+
+
+.page{
+    height:auto;
+    min-height:0;
+    padding-bottom:30px;
+}
+
+
+.navbar{
+    position:relative;
+}
