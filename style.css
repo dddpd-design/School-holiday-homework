@@ -768,3 +768,36 @@ body{
     min-height:100%;
     height:auto;
 }
+html, body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.phone{
+    width:360px;
+    height:90vh;
+    max-height:90vh;
+    overflow:hidden;
+}
+
+
+#screen{
+    height:calc(90vh - 70px);
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+
+.page{
+    min-height:0;
+    height:auto;
+}
