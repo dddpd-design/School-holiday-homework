@@ -678,3 +678,26 @@ textarea{
     0 0 25px rgba(0,245,160,.65);
 
 }
+/* Mobile scrolling fix */
+
+.phone{
+    max-height:90vh;
+    overflow-y:auto;
+}
+
+
+.page{
+    min-height:auto;
+    padding-bottom:20px;
+}
+
+
+#screen{
+    overflow:visible;
+}
+
+
+.navbar{
+    position:sticky;
+    bottom:0;
+}
