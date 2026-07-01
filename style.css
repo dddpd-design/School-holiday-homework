@@ -1,0 +1,680 @@
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:"Segoe UI",Arial,sans-serif;
+
+    background:
+    radial-gradient(circle at 10% 10%,#ffffff 0%,transparent 25%),
+    linear-gradient(
+        135deg,
+        #00f5a0,
+        #00d9ff,
+        #007bff
+    );
+
+    transition:.3s;
+}
+
+
+
+.phone{
+
+    width:360px;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.22);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.25);
+
+}
+
+
+
+.header{
+
+    position:relative;
+
+    padding:22px;
+
+    text-align:center;
+
+    background:
+    rgba(255,255,255,.3);
+
+    backdrop-filter:blur(15px);
+
+}
+
+
+
+.header h2{
+
+    margin:0;
+
+    color:#003b4d;
+
+    font-weight:850;
+
+}
+
+
+
+.header p{
+
+    margin:5px 0 0;
+
+    color:#155e75;
+
+}
+
+
+
+.page{
+
+    display:none;
+
+    padding:20px;
+
+    min-height:520px;
+
+}
+
+
+
+.active{
+
+    display:block;
+
+    animation:
+    appear .35s ease;
+
+}
+
+
+
+@keyframes appear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+.profile{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.avatar{
+
+    width:65px;
+
+    height:65px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    font-size:32px;
+
+    background:rgba(255,255,255,.5);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.18);
+
+}
+
+
+
+h2,h3,h4{
+
+    color:#003b4d;
+
+}
+
+
+
+p{
+
+    color:#355f6b;
+
+    font-weight:600;
+
+    line-height:1.5;
+
+}
+
+
+
+.card,
+.subject{
+
+    padding:16px;
+
+    margin:12px 0;
+
+    border-radius:22px;
+
+    background:
+    rgba(255,255,255,.55);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.12);
+
+    transition:.25s;
+
+}
+
+
+
+.card:hover,
+.subject:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.stats{
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+
+
+.progress{
+
+    width:100%;
+
+}
+
+
+
+progress{
+
+    width:100%;
+
+    accent-color:#00c896;
+
+}
+
+
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ffb000,
+        #ff4b2b,
+        #ff006e
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+    box-shadow:
+
+    0 0 20px rgba(255,80,80,.75),
+    0 0 45px rgba(255,0,110,.55);
+
+    transition:.25s;
+
+}
+
+
+
+button:hover{
+
+    transform:
+    translateY(-3px)
+    scale(1.03);
+
+}
+
+
+
+input,
+textarea{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:14px;
+
+    border-radius:16px;
+
+    border:none;
+
+    outline:none;
+
+    font-family:inherit;
+
+}
+
+
+
+textarea{
+
+    height:90px;
+
+    resize:none;
+
+}
+
+
+
+.subject{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:white;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+}
+
+
+
+.science{
+
+    background:
+    linear-gradient(135deg,#0047ff,#00bfff);
+
+    box-shadow:
+    0 0 25px rgba(0,120,255,.7);
+
+}
+
+
+
+.maths{
+
+    background:
+    linear-gradient(135deg,#00a651,#7cff00);
+
+    box-shadow:
+    0 0 25px rgba(0,200,80,.7);
+
+}
+
+
+
+.sst{
+
+    background:
+    linear-gradient(135deg,#5a2d0c,#b5651d);
+
+    box-shadow:
+    0 0 25px rgba(181,101,29,.7);
+
+}
+
+
+
+.english{
+
+    background:
+    linear-gradient(135deg,#fff,#dbeafe);
+
+    color:#003b4d;
+
+}
+
+
+
+.sanskrit{
+
+    background:
+    linear-gradient(135deg,#fff200,#ff9800);
+
+    color:#3d2500;
+
+}
+
+
+
+.hindi{
+
+    background:
+    linear-gradient(135deg,#b00020,#ff1744);
+
+}
+
+
+
+.ai{
+
+    background:
+    linear-gradient(135deg,#6a00ff,#00c6ff);
+
+}
+
+
+
+.data{
+
+    background:
+    linear-gradient(135deg,#004d40,#00bfa5);
+
+}
+
+
+
+.it{
+
+    background:
+    linear-gradient(135deg,#263238,#607d8b);
+
+}
+
+
+
+.chat-input{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+}
+
+
+
+.chat-input input{
+
+    flex:1;
+
+    margin:0;
+
+}
+
+
+
+.chat-input button{
+
+    width:48px;
+
+    height:48px;
+
+    padding:0;
+
+    margin:0;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:black;
+
+    font-size:26px;
+
+    box-shadow:
+
+    0 0 18px white,
+    0 0 45px #00c8ff;
+
+}
+
+
+
+.bubble{
+
+    padding:14px;
+
+    margin:12px 0;
+
+    border-radius:18px;
+
+}
+
+
+
+.user{
+
+    background:#dffff4;
+
+}
+
+
+
+.ai{
+
+    background:#e1f4ff;
+
+}
+
+
+
+.hint,
+.subject-hint{
+
+    text-align:center;
+
+    font-size:14px;
+
+    font-style:italic;
+
+    font-weight:800;
+
+    color:#164e63;
+
+}
+
+
+
+.navbar{
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    background:
+    rgba(255,255,255,.35);
+
+    backdrop-filter:blur(18px);
+
+}
+
+
+
+.navbar button{
+
+    width:55px;
+
+    height:55px;
+
+    padding:5px;
+
+    margin:0;
+
+    background:transparent;
+
+    color:#003b4d;
+
+    box-shadow:none;
+
+}
+
+
+
+.stars{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+
+
+.stars button{
+
+    width:45px;
+
+    margin:0;
+
+    background:white;
+
+    color:#ff9900;
+
+    box-shadow:none;
+
+}
+
+
+
+/* Theme */
+
+.theme-card{
+
+    cursor:pointer;
+
+}
+
+
+
+.dark{
+
+    background:
+    linear-gradient(
+        135deg,
+        #001f3f,
+        #003b46
+    );
+
+}
+
+
+
+.dark .phone{
+
+    background:
+    rgba(0,20,40,.6);
+
+}
+
+
+
+.dark .card{
+
+    background:
+    rgba(255,255,255,.12);
+
+}
+
+
+
+.dark h2,
+.dark h3,
+.dark h4,
+.dark p,
+.dark .hint,
+.dark .subject-hint{
+
+    color:white;
+
+}
+
+
+
+.dark input,
+.dark textarea{
+
+    background:
+    rgba(255,255,255,.15);
+
+    color:white;
+
+}
+.ai{
+
+    background:
+    linear-gradient(
+        135deg,
+        #00c9a7,
+        #00f5a0,
+        #00d9a5
+    );
+
+    box-shadow:
+    0 0 25px rgba(0,245,160,.65);
+
+}
